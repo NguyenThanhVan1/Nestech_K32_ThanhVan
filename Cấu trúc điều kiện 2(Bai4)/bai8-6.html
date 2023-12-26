@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let doanhSo = parseInt(prompt("Nhập doanh số công ty(triệu)"))
+        let hoaHong=null
+        if(doanhSo>800)
+            hoaHong = (doanhSo-800)*0.03+(doanhSo*0.02)
+        else if(doanhSo>600)
+            hoaHong = doanhSo*0.015
+        else
+            hoaHong = doanhSo*0.01
+    alert("Hoa Hồng bạn nhận được là "+hoaHong +" triệu ")
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kttx = parseInt(prompt("Nhập điểm các bài kiểm tra"))
+        let ktgk = parseInt(prompt("Nhập điểm kiểm tra giữa kì"))
+        let ktck = parseInt(prompt("Nhập điểm kiểm tra cuối kì"))
+        let tbm=parseInt((kttx+ktgk*2+ktck*3)/6)
+        alert("điểm trung bình là "+tbm)
+        if(tbm>8)
+            alert("Học lực giỏi")
+        else if(tbm>5.5) 
+            alert("Học lực khá")
+        else
+            alert("Học lục kém")
+    </script>
+</body>
+</html>

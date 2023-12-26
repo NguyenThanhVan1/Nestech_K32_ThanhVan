@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a,b,delta,c,x1,x2
+        a=parseInt(prompt("Nhập vào a "))
+        b=parseInt(prompt("Nhập vào b "))
+        c=parseInt(prompt("Nhập vào c "))
+
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+            alert("phương trình vô số nghiệm")}
+                else{alert("Phuong trinh vô nghiệm")}}
+            else{alert("Phuong trinh co mot nghiem: x ="+ (-c / b))}
+        }
+    // tinh delta
+        else{
+        delta = b*b - 4*a*c;
+    // tinh nghiem
+    if (delta > 0) {
+        x1 =  ((-b + sqrt(delta)) / (2*a));
+        x2 =  ((-b - sqrt(delta)) / (2*a));
+        alert("Phuong trinh co 2 nghiem la: x1= "+x1+" x2= "+x2)
+    } else if (delta == 0) {
+        x1 = (-b / (2 * a));
+        alert("Phong trinh co nghiem kep: x1 = x2 ="+x1);
+    } else {
+        alert("Phuong trinh vo nghiem!");
+    }
+}
+    </script>
+</body>
+</html>
