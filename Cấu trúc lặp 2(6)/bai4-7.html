@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="HCN"></div>
+
+    <script>
+        function veHinhChuNhat(height, width) {
+            let HCN = '';
+            for (let i = 1; i <= height; i++) {
+                for (let j = 1; j <= width; j++) {
+                    if (i === 1 || i === height || j === 1 || j === width) {
+                        HCN += '* ';
+                    } else {
+                        HCN += '&nbsp;&nbsp;&nbsp;' // Khoảng trắng để tạo hình rỗng bên trong
+                    }
+                }
+                HCN += '<br>';
+            }
+            document.getElementById('HCN').innerHTML = HCN;
+        }
+
+        let height = parseInt(prompt("Nhập chiều cao của hình chữ nhật"));
+        let width = parseInt(prompt("Nhập chiều rộng của hình chữ nhật"));
+
+            veHinhChuNhat(height, width);
+       
+        
+    </script>
+</body>
+</html>

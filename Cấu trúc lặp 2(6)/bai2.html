@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let number = parseInt(prompt("Nhập số lượng số nguyên tố cần in ra"))
+        // let count = 0
+        // let N = 2 
+        // let i
+        // while(1){
+        //     if(count<number){
+        //         for(i=2 ; i<N-1 ; i++){
+        //             if(N%i==0){alert(N+"k phải số nguyên tố")}}
+        //             alert(N)
+        //             count++
+        //             N++
+        //         }}
+        let N = parseInt(prompt("nhập số lượng số nguyên tố cần in"))
+        let dem = 0
+        let number = 2
+        while(dem<N){
+            if(soNgto(number)){
+                alert(number)
+                dem++
+            }
+            number++
+        }
+        function soNgto(number){
+            let j
+            let sqrt = Math.sqrt(number)
+            for(j = 2; j<sqrt;j++){
+                if(number%j==0){
+                    return 0
+                }
+            }
+            return 1
+        }
+    
+    </script>
+</body>
+</html>

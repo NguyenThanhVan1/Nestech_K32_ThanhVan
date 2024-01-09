@@ -1,0 +1,32 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="denmo"></div>
+
+    <script>
+        function veTamGiac(n) {
+            let a = '';
+            for (let i = n; i <= 1; i--) {
+                for (let j = 1; j <= n - i; j++) {
+                    a += '&nbsp;&nbsp;&nbsp;'; // Khoảng trắng để tạo khoảng cách
+                }
+                for (let k = 1; k <= i; k++) {
+                    a += '* '; // Dấu sao để tạo tam giác
+                }
+                a += '<br>';
+            }
+            document.getElementById('denmo').innerHTML = a;
+        }
+
+        let n = parseInt(prompt("Vẽ tam giác"));
+        if (!isNaN(n) && n > 0) {
+            veTamGiac(n);
+        } else {
+            document.getElementById('denmo').innerHTML = "Vui lòng nhập một số nguyên dương hợp lệ.";
+        }
+    </script>
+</body>
+</html>

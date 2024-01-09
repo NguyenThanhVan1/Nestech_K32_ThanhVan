@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập vào chuỗi 1")
+        let b = prompt("Nhập vào chuỗi 2")
+        let mang1=a.split(" ")
+        let mang2=b.split(" ")
+        function SoSanh(mang1,mang2){
+        for(let i = 0 ;i <mang1.length;i++ ){
+            if(mang1[i]!==mang2[i]){
+                return 0
+            }
+        }
+        return 1
+    }
+    if(SoSanh(mang1,mang2)){
+        alert("2 chuỗi giống nhau")
+    }else{
+        alert("2 chuỗi khác nhau")
+    }
+    </script>
+</body>
+</html>

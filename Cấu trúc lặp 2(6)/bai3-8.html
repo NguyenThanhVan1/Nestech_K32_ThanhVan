@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="game();">Bắt đầu</button>
+    <script>
+        function game(){
+            let q=2
+            let min=parseInt(prompt("Nhập Khoảng dưới"))
+            let max=parseInt(prompt("Nhập khoảng trên"))
+            let random = Math.floor(Math.random()*max)+min
+            let doan = parseInt(prompt("Nhập số muốn đoán "))
+            while(q)
+            if(doan<random){
+                doan = parseInt(prompt("Số bạn đoán bé hơn kết quả mời bạn nhập lại"))
+                q--
+            }
+            else if(doan>random){
+                doan = parseInt(prompt("Số bạn đoán lớn hơn kết quả mời bạn nhập lại"))
+                q--
+            }
+            else if(doan===random){
+            alert("Chúc mừng bạn đã đoán đúng")
+            t=false
+            break}
+        }
+       
+    </script>
+
+</body>
+</html>

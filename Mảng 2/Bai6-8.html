@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[]
+        let n= parseInt(prompt("Nhập số lượng phần tử của mảng : "))
+        for(let i = 0 ; i<n;i++){
+            a[i]=parseInt(prompt("Nhập phần tử thứ a["+i+"]"))            
+        }
+        a.sort(function (a, b) {
+   return a === b ? 0 : a > b ? -1 : 1;
+});
+alert(a)
+
+    
+    </script>
+</body>
+</html>

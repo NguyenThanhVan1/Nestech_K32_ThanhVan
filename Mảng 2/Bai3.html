@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let englishWords = ["hello", "goodbye", "apple", "cat"];
+        let vietnameseWords = ["xin chào", "tạm biệt", "quả táo", "con mèo"];
+
+// Hàm tìm kiếm từ tiếng Anh và hiển thị từ tương ứng trong tiếng Việt
+    function searchWord(word) {
+    // Tìm vị trí của từ trong mảng tiếng Anh
+        let index = englishWords.indexOf(word.toLowerCase());
+
+    // Kiểm tra xem từ có tồn tại trong mảng không
+        if (index !== -1) {
+        // Nếu từ được tìm thấy, hiển thị từ tương ứng trong mảng tiếng Việt
+        let vietnameseWord = vietnameseWords[index];
+        console.log('Từ "${word}" trong tiếng Việt là:'+ vietnameseWord);
+    }    else {
+        // Nếu không tìm thấy, thông báo không tìm thấy
+        console.log(`Không tìm thấy từ "${word}" trong danh sách.`);
+    }
+}
+
+// Sử dụng hàm searchWord để tìm kiếm từ tiếng Anh và hiển thị từ tương ứng trong tiếng Việt
+searchWord("hello"); // Kết quả: Từ "hello" trong tiếng Việt là: xin chào
+searchWord("dog");   // Kết quả: Không tìm thấy từ "dog" trong danh sách.
+    </script>
+</body>
+</html>

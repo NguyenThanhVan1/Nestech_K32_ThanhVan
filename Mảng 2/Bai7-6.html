@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = []
+        let n = prompt("Nhập vào số lượng phần tử mảng")
+        for(let i = 0 ; i < n ; i ++){
+            a[i]=prompt("Nhập vào phần tử thứ a["+i+"]")
+        }
+        for(let i = 0 ; i < n ; i ++){
+            if (a[i]=="-"){
+                a[i]="_"
+            }
+        }
+        alert("Mảng sau khi đã chỉ sửa "+a)
+    </script>
+</body>
+</html>
